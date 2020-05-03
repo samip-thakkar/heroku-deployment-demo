@@ -25,9 +25,9 @@ plot_model(lr)
 save_model(lr, 'deployment_05022020')
 deployment_05022020 = load_model('deployment_05022020')
 
-"""
+
 import requests
-url = ''
+url = 'https://insurance-price-prediction.herokuapp.com/'
 pred = requests.post(url, json = {'age':55, 'sex':'male', 'bmi':59, 'children':1, 'smoker':'male', 'region':'northwest'})
 print(pred.json())
-"""
+
